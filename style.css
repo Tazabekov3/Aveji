@@ -1,0 +1,294 @@
+:root {
+    --text-color: #212529;
+}
+
+* {
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+}
+
+body {
+    padding: 0 3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+p {
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 72px;
+    width: 60%;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 48px;
+    width: 40%;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+section {
+    margin-bottom: 5rem;
+}
+
+header {
+    padding-top: 1em;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo > img {
+    width: 40px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.hero-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.hero-top > a {
+    height: 1em;
+    text-decoration: underline;
+    align-self: end;
+}
+
+.hero-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    align-items: start;
+}
+
+.hero-bottom-item-1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    align-self: start;
+    height: fit-content;
+    font-size: 20px;
+    justify-self: left;
+    width: 60%;
+}
+
+.hero-bottom-item-2 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    align-self: end;
+}
+
+.hero-bottom-item-3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    justify-self: right;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-info {
+    width: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-info-items {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-info-items:not(.about-info-items:last-child) {
+    margin-bottom: 2em;
+}
+
+.about-info-items > p:not(.about-info-items > p:last-child) {
+    margin-bottom: 1em;
+}
+
+.about-info-items-div:not(.about-info-items-div:last-child) {
+    margin-bottom: 2em;
+}
+
+.steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.steps-items {
+    width: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.steps-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-top: 1em;
+}
+
+.steps-item > h3 {
+    max-width: 45%;
+    font-size: 36px;
+    top: 0;
+}
+
+.steps-item > p {
+    font-size: 16px;
+    width: 50%;
+    top: 0;
+    right: 0;
+    margin-bottom: 1em;
+}
+
+.projects > h2 {
+    margin-bottom: 1em;
+}
+
+.projects-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.project-description {
+    display: none;
+}
+
+.testimonials > h2 {
+    margin-bottom: 1em;
+}
+
+.testimonials-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.testimonials-item {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials-item > img {
+    width: 40px;
+    height: 30px;
+    margin-top: 2em;
+}
+
+.testimonials-item > h4 {
+    font-size: 18px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.testimonials-item > p {
+    font-size: 16px;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+.testimonials-item:not(.testimonials-item:last-child) {
+    margin-right: 1em;
+}
+
+.form-section-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-section-items > img {
+    width: 562px;
+    height: 566px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+}
+
+.form-container > h2 {
+    width: 100%;
+}
+
+.form-container > input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.form-container > button {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 1em;
+    width: 40%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    align-items: center;
+}
+
+.socials {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
